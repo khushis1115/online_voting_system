@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Votes</title>
+</head>
+<body>
+    <h2>Submitted Votes</h2>
+
+    <!-- Display tally result -->
+    <p>{{ tally }}</p>
+
+    <ul>
+        {% for vote in votes %}
+            <li>Aadhar Hash: {{ vote.data['aadhar'] }} - Voted for: {{ vote.data['vote'] }}</li>
+        {% endfor %}
+    </ul>
+
+    <button onclick="window.location.href='/'">Go Back to Home</button>
+</body>
+</html>

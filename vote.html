@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cast Your Vote</title>
+</head>
+<body>
+    <h2>Cast Your Vote</h2>
+    <form action="/submit_vote" method="post">
+        <label>Select one party:</label><br>
+        <input type="radio" id="party1" name="party" value="Party 1" required>
+        <label for="party1">Party 1</label><br>
+
+        <input type="radio" id="party2" name="party" value="Party 2">
+        <label for="party2">Party 2</label><br>
+
+        <input type="radio" id="party3" name="party" value="Party 3">
+        <label for="party3">Party 3</label><br>
+
+        <input type="radio" id="party4" name="party" value="Party 4">
+        <label for="party4">Party 4</label><br>
+
+        <button type="submit">Submit Vote</button>
+    </form>
+</body>
+</html>
